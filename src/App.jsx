@@ -8,7 +8,7 @@ import TechArsenal from './components/TechArsenal';
 import React, { useState, useEffect } from 'react';
 
 // API Configuration
-const API_BASE_URL = 'http://localhost:5000/api'; // Replace with your actual API base URL
+const API_BASE_URL = 'https://portfolio-backend-kappa-amber.vercel.app/api'; // Replace with your actual API base URL
 
 const App = () => {
   const [portfolioData, setPortfolioData] = useState(null);
