@@ -52,130 +52,181 @@ const App = () => {
       console.error('Error fetching portfolio data:', err);
       setError(err.message);
       setLoading(false);
-      
+
       // Fallback to demo data if API fails
       setPortfolioData({
         hero: {
-          name: 'Aditya Domle',
-          title: 'Full-Stack Developer | Next.js, React, Node.js',
-          bio: 'Self-taught Full-Stack Developer from India, specializing in modern web technologies and open-source development. Passionate about building scalable applications with Next.js and contributing to the developer community through open-source projects.',
-          location: 'Ngp, Maharashtra, India',
-          profileImage: '/api/placeholder/300/300',
+          name: 'Samrah Fatima',
+          title: 'Full-Stack Developer | MERN and PERN Stack',
+          bio: 'Final Year Software Engineering student at NED University with hands-on experience in full-stack and backend development, specializing in scalable web applications and AI-driven systems.',
+          location: 'Karachi, Pakistan',
+          profileImage: 'https://res.cloudinary.com/ddpvorduw/image/upload/v1767286704/profile_e1mjdb.jpg',
           socialLinks: [
-            { platform: 'github', url: 'https://github.com' },
-            { platform: 'linkedin', url: 'https://linkedin.com' },
-            { platform: 'twitter', url: 'https://twitter.com' },
-            { platform: 'instagram', url: 'https://instagram.com' }
+            { platform: 'github', url: 'https://github.com/CSsamrah' },
+            { platform: 'linkedin', url: 'https://www.linkedin.com/in/samrah-fatima-/' }
           ]
         },
+
         experiences: [
           {
-            title: "GSSoC'25",
-            role: 'Project Admin/Maintainer',
-            period: 'Aug 2025 - Sept 2025',
-            description: 'As a Project Admin, I reviewed code, merged pull requests, and communicated with developers, ensuring smooth project workflow and collaboration during GSSoC\'25. My full responsibilities included:',
+            title: 'Mazik Global Pakistan',
+            role: 'Core Development Intern',
+            period: 'June 2025 - August 2025',
+            description:
+              'Worked as a Core Development Intern focusing on Gen-AI systems, full-stack development, and scalable backend solutions for recruitment automation platforms.',
             responsibilities: [
-              'Reviewed code submissions and resolved technical blockers to maintain project quality',
-              'Collaborated with fellow open-source developers on project planning and implementation',
-              'Designed and implemented UI/UX solutions with modern animation libraries like Framer Motion and GSAP',
-              'Managed API integrations and ensured smooth communication across the development team',
-              'Mentored contributors and facilitated knowledge sharing within the community',
-              'Coordinated pull request reviews and maintained high code quality standards'
+              'Architected a Gen-AI pipeline using LangChain for automated resume parsing and job description analysis',
+              'Led full-stack development of Smart Resume Matcher using React (TypeScript) and ASP.NET Core',
+              'Conducted 10+ code reviews and managed GitHub workflows'
             ]
           },
           {
-            title: 'Sheryians Coding School',
-            role: 'Trainee',
-            period: 'May 2025 - Oct 2025',
-            description: 'Trainee at Sheryians Coding School, where I learned full-stack technologies and DevOps practices.',
-            responsibilities: []
+            title: 'Conceptzi',
+            role: 'Backend Intern',
+            period: 'Feb 2024 - May 2024',
+            description:
+              'Backend Intern responsible for API development, performance optimization, and large-scale data processing in an Agile environment.',
+            responsibilities: [
+              'Developed and deployed 10+ REST APIs using modular and scalable endpoint design',
+              'Improved backend efficiency by 85% through optimized API architecture',
+              'Reduced large dataset processing time from 7 minutes to 1 minute using efficient algorithms'
+            ]
           }
         ],
+
         technologies: [
           { name: 'JavaScript' },
           { name: 'TypeScript' },
           { name: 'Tailwind' },
-          { name: 'SCSS' },
-          { name: 'Framer' },
+          { name: 'CSS' },
           { name: 'React' },
-          { name: 'Redux' },
-          { name: 'Next.js' },
           { name: 'Node.js' },
           { name: 'Express' },
           { name: 'MongoDB' },
           { name: 'Supabase' },
-          { name: 'Sanity' },
           { name: 'Docker' },
           { name: 'Vercel' },
           { name: 'Git' },
           { name: 'Postman' },
-          { name: 'Cloudflare' }
+          { name: 'Material-UI' },
+          { name: 'Bootstrap' },
+          { name: 'Shadcn' },
+          { name: 'ASP.NET Core' },
+          { name: 'RESTful APIs' },
+          { name: 'PostgreSQL' },
+          { name: 'Firebase' },
+          { name: 'LangChain' },
+          { name: 'Python' },
+          { name: 'C++' }
         ],
+
         projects: [
           {
-            name: 'ResearchX',
-            description: 'AI-powered research document generator that creates comprehensive research papers using advanced AI models. Features...',
-            image: '/api/placeholder/600/300',
-            technologies: ['TypeScript', 'Tailwind', 'Next.js'],
-            liveUrl: 'https://example.com',
-            githubUrl: 'https://github.com'
+            name: 'Smart Resume Matcher',
+            description:
+              'AI-powered recruitment platform that automates resume screening and job matching using semantic search and large language models.',
+            image: 'https://res.cloudinary.com/ddpvorduw/image/upload/v1767285734/SmartMatcher_ebw6nu.png',
+            technologies: ['React', 'TypeScript', 'ASP.NET Core', 'LangChain', 'ChromaDB'],
+            liveUrl: 'https://www.loom.com/share/b395a52f76004c1cb45781fe490423b4',
+            githubUrl: ''
           },
           {
-            name: 'Freshmart Store',
-            description: 'Modern grocery store web application with a clean and responsive UI. Built with efficient state management using Redux, featuring...',
-            image: '/api/placeholder/600/300',
-            technologies: ['Tailwind', 'React', 'Redux'],
-            liveUrl: 'https://example.com',
-            githubUrl: 'https://github.com'
+            name: 'Techware – IT Components Marketplace',
+            description:
+              'Full-featured PERN stack e-commerce marketplace for IT hardware, supporting verified sellers, secure payments, and product categorization.',
+            image: 'https://res.cloudinary.com/ddpvorduw/image/upload/v1767284845/homepage_zcrfri.jpg',
+            technologies: ['PostgreSQL', 'Express.js', 'React', 'Node.js'],
+            liveUrl: '',
+            githubUrl: 'https://github.com/CSsamrah/Ecommerce-project'
+          },
+          {
+            name: 'Assignment Submission Portal',
+            description:
+              'Hackathon runner-up MERN stack platform enabling secure assignment submission with multi-format file uploads and JWT-based authentication.',
+            image: 'https://res.cloudinary.com/ddpvorduw/image/upload/v1767285003/smit_portal_vkredh.jpg',
+            technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Firebase', 'JWT'],
+            liveUrl: 'https://hackathon-frontend-gules.vercel.app/',
+            githubUrl: 'https://github.com/CSsamrah/Final-Hackathon.git'
+          },
+          {
+            name: 'Glow Quester',
+            description:
+              'Personalized quiz-based recommendation platform with e-commerce functionality and a PostgreSQL-backed backend.',
+            image: 'https://res.cloudinary.com/ddpvorduw/image/upload/v1767285143/glowQuester_psa2b6.jpg',
+            technologies: ['React', 'Node.js', 'Express.js', 'PostgreSQL'],
+            liveUrl: 'https://you-care-client.vercel.app/',
+            githubUrl: 'https://github.com/CSsamrah/Glow-Quester.git'
+          },
+          {
+            name: 'Ocean Odyssey',
+            description:
+              'C++ fish survival game showcasing Object-Oriented Programming through modular design, strategic gameplay, and obstacle navigation.',
+            image: 'https://res.cloudinary.com/ddpvorduw/image/upload/v1767286103/ocean_q9t4zt.png',
+            technologies: ['C++', 'Tkinter', 'Object-Oriented Programming'],
+            liveUrl: '',
+            githubUrl: 'https://github.com/CSsamrah/ocean-odyssey.git'
           }
         ],
+
         achievements: [
-          { title: 'Job Ready Cohort', image: '/api/placeholder/600/400' },
-          { title: 'JavaScript Intermediate', image: '/api/placeholder/600/400' }
+          {
+            title: 'AI Wrapper Competition – Regional 3rd Place',
+            image: 'https://res.cloudinary.com/ddpvorduw/image/upload/v1767288801/AI_Wrapper_natxgy.jpg'
+          },
+          {
+            title: 'MERN Stack Development Certification',
+            image: 'https://res.cloudinary.com/ddpvorduw/image/upload/v1767280641/SMIT_dxtymh.png'
+          },
+          {
+            title: 'ICAP Fully Funded Scholarship',
+            image: 'https://res.cloudinary.com/ddpvorduw/image/upload/v1767280640/ICAP_Certificate_lnmady.jpg'
+          }
         ],
+
         contact: {
-          email: 'adityadomle14@gmail.com',
-          sourceCodeUrl: 'https://topmate.io',
-          message: "Ready to bring your ideas to life? I'm always excited to collaborate on innovative projects and help transform your vision into reality."
+          email: 'samra.fatima.790@gmail.com',
+          sourceCodeUrl: '',
+          message:
+            "Ready to bring your ideas to life? I'm always excited to collaborate on innovative projects and help transform your vision into reality."
         }
       });
-    }
-  };
 
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-black flex items-center justify-center">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-orange-600"></div>
-      </div>
-    );
-  }
+  }};
 
-  if (error && !portfolioData) {
-    return (
-      <div className="min-h-screen bg-black flex items-center justify-center text-white">
-        <div className="text-center">
-          <p className="text-red-500 mb-4">Error loading portfolio data</p>
-          <button 
-            onClick={fetchPortfolioData}
-            className="px-6 py-2 bg-orange-600 rounded-lg hover:bg-orange-700"
-          >
-            Retry
-          </button>
+      if (loading) {
+        return (
+          <div className="min-h-screen bg-black flex items-center justify-center">
+            <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-orange-600"></div>
+          </div>
+        );
+      }
+
+      if (error && !portfolioData) {
+        return (
+          <div className="min-h-screen bg-black flex items-center justify-center text-white">
+            <div className="text-center">
+              <p className="text-red-500 mb-4">Error loading portfolio data</p>
+              <button
+                onClick={fetchPortfolioData}
+                className="px-6 py-2 bg-orange-600 rounded-lg hover:bg-orange-700"
+              >
+                Retry
+              </button>
+            </div>
+          </div>
+        );
+      }
+
+      return (
+        <div className="min-h-screen bg-black text-white">
+          <HeroSection data={portfolioData?.hero} />
+          <ProfessionalJourney experiences={portfolioData?.experiences} />
+          <TechArsenal technologies={portfolioData?.technologies} />
+          <FeaturedProjects projects={portfolioData?.projects} />
+          <Achievements achievements={portfolioData?.achievements} />
+          <ContactSection contact={portfolioData?.contact} />
         </div>
-      </div>
-    );
-  }
+      );
+    };
 
-  return (
-    <div className="min-h-screen bg-black text-white">
-      <HeroSection data={portfolioData?.hero} />
-      <ProfessionalJourney experiences={portfolioData?.experiences} />
-      <TechArsenal technologies={portfolioData?.technologies} />
-      <FeaturedProjects projects={portfolioData?.projects} />
-      <Achievements achievements={portfolioData?.achievements} />
-      <ContactSection contact={portfolioData?.contact} />
-    </div>
-  );
-};
-
-export default App;
+    export default App;
